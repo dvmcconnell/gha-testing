@@ -1,0 +1,9 @@
+name: Run actions
+on: [push]
+jobs:
+  py-gh-output:
+    steps:
+      - uses: dvmcconnell/gha-testing/actions/python-gh-output@main
+        id: py-gh-output
+      - run: |
+          echo "${{ steps.py-gh-output.outputs.output-val }}"
