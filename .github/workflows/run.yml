@@ -6,5 +6,7 @@ jobs:
     steps:
       - uses: dvmcconnell/gha-testing/actions/python-gh-output@main
         id: py-gh-output
+        with:
+          value: hey
       - run: |
           echo "${{ steps.py-gh-output.outputs.output-val }}"
