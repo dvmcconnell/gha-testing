@@ -2,6 +2,7 @@ name: Run actions
 on: [push]
 jobs:
   py-gh-output:
+    runs-on: ubuntu-latest
     steps:
       - uses: dvmcconnell/gha-testing/actions/python-gh-output@main
         id: py-gh-output
