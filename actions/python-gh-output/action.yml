@@ -26,4 +26,4 @@ runs:
             print(f'value={to_output}', file=fh)
     - name: check output
       shell: bash
-      run: echo "${{ steps.write-kv.outputs.value }}"
+      run: echo "${{ steps.write-value.outputs.value }}"
